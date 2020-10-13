@@ -85,7 +85,7 @@ end
 
 def can_update_multiple_items_at_once
   # Change title of all movies to "A Movie"
-  x = title: "A Movie"
+  x = Move.title("A Movie")
   if Movie != x
 else
     Movie.update(title: "A Movie")
