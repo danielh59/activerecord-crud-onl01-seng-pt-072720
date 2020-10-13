@@ -25,7 +25,7 @@ def can_be_created_with_a_hash_of_attributes
   movie
 end
 
-def can_be_created_in_a_block
+def can_be_created_in_a_block(arg = )
   # If no arguments are passed, use default values:
   # title == "Home Alone"
   # release_date == 1990
@@ -70,9 +70,9 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
- __	  movie = Movie.find_by(title: "Awesome Flick")
- __	  movie.update(title: "Even Awesomer Flick")
- __	  movie.save
+    movie = Movie.find_by(title: "Awesome Flick")
+        movie.update(title: "Even Awesomer Flick")
+            movie.save
 end
 
 def can_update_using_update_method
