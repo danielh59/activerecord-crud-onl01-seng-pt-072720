@@ -87,10 +87,9 @@ def can_update_multiple_items_at_once
   # Change title of all movies to "A Movie"
   x = Move.title("A Movie")
   if Movie != x
-        Movie.update(title: "A Movie")
-else
-
-end
+    Movie.update(title: "A Movie")
+  else
+  end
 end
 
 def can_destroy_a_single_item
