@@ -92,6 +92,7 @@ def can_update_multiple_items_at_once
 end
 
 def can_destroy_a_single_item
+movie = Movie.create(title: "hellow")
   Movie.destroy(1)
 end
 
