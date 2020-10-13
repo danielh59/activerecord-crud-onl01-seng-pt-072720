@@ -86,8 +86,9 @@ end
 def can_update_multiple_items_at_once
   # Change title of all movies to "A Movie"
   if Movie.find_by(name: "A Movie")
-  Movie.update(title: "A Movie")
+
 else
+    Movie.update(title: "A Movie")
 end
 end
 
