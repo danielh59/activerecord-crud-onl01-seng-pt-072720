@@ -85,7 +85,6 @@ end
 
 def can_update_multiple_items_at_once
   # Change title of all movies to "A Movie"
-
     Movie.update_all(title: "A Movie")
 end
 
