@@ -92,7 +92,7 @@ def can_update_multiple_items_at_once
 end
 
 def can_destroy_a_single_item
-  Movie.destroy.first
+  Movie.destroy(1)
 end
 
 def can_destroy_all_items_at_once
