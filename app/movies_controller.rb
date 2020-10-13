@@ -93,7 +93,6 @@ end
 
 def can_destroy_a_single_item
   Movie.destroy.first
-  __
 end
 
 def can_destroy_all_items_at_once
