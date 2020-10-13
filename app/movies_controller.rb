@@ -98,5 +98,5 @@ def can_destroy_a_single_item
 end
 
 def can_destroy_all_items_at_once
-Movie.destroy_all 
+Movie.destroy_all
 end
